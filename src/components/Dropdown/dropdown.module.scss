@@ -27,6 +27,10 @@
       width: 440px;
       outline: none;
       border: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
     }
 
     input::placeholder {
@@ -54,7 +58,7 @@
     .arrowUp,
     .arrowDown,
     input {
-      margin-top: 13px;
+      margin-top: 6px;
     }
   }
 
