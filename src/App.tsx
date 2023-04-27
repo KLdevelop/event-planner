@@ -1,8 +1,8 @@
 import React from 'react';
 import 'app.module.scss';
-import { Route, Routes } from 'react-router';
+import { Route, Routes, Navigate } from 'react-router';
 import { BrowserRouter as Router, Outlet } from 'react-router-dom';
-import { PersonalPage, OverviewPage } from './pages';
+import { PersonalPage, OverviewPage, RegBlock, AuthBlock, LoginPage } from './pages';
 import { Header } from './components';
 import { Footer } from './components/Footer';
 
@@ -31,6 +31,11 @@ export const App = () => (
           <Route path="sendapp" element={<div>Send app</div>} />
           <Route path="rating" element={<div>Rating</div>} />
         </Route>
+      </Route>
+      <Route path="/login" element={<LoginPage />}>
+        <Route index element={<AuthBlock />} />
+        <Route path="authorization" element={<Navigate replace to="/login" />} />
+        <Route path="registration" element={<RegBlock />} />
       </Route>
     </Routes>
   </Router>
