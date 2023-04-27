@@ -1,3 +1,30 @@
+@use '/src/styles/colors.module.scss';
+
 .nameBlockLk {
-  
+  height: fit-content;
+  background: colors.$blue;
+  display: flex;
+  padding: 15px 50px;
+
+  .avatar {
+    // height: 82px;
+    border-radius: 50px;
+  }
+
+  .nameBlock {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    .FIO {
+      color: colors.$fWhite;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .role {
+      color: colors.$fGrayLighte2;
+      font-size: smaller;
+      margin: 0;
+    }
+  }
 }
