@@ -1,0 +1,85 @@
+.myTeams {
+  .myTeams_cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    // justify-content: space-around;
+    .card {
+      margin: 10px;
+      width: 323px;
+      height: 149px;
+
+      background: #3a3c46;
+      display: flex;
+      justify-content: space-between;
+      padding: 1%;
+      .avatar {
+        background: #d9d9d9;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+      }
+      .card_right {
+        div {
+          margin-bottom: 5%;
+        }
+        .card_name {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ededed;
+        }
+        .card_count {
+          display: flex;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 21px;
+          color: #ededed;
+
+          span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 21px;
+            /* identical to box height, or 173% */
+
+            display: flex;
+            align-items: center;
+
+            color: rgba(237, 237, 237, 0.5);
+          }
+        }
+        .card_btn {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 5px 10px;
+          width: 186px;
+          height: 34px;
+          background: #402fff;
+          border: 1px solid rgba(27, 28, 33, 0.3);
+
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: -0.96px;
+
+          color: #ffffff;
+        }
+      }
+    }
+    .card_add {
+      width: 87px;
+      height: 87px;
+      background: #402fff;
+      margin-left: 50px;
+    }
+  }
+}

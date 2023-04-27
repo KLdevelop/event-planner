@@ -1,0 +1,57 @@
+.represCard {
+  height: max-content;
+  margin: 0 10px;
+  display: flex;
+  background: #3a3c46;
+  width: fit-content;
+  padding: 25px;
+  .represCard_avatar {
+    width: 100px;
+    height: 100px;
+    background: #d9d9d9;
+    border-radius: 100px;
+  }
+  .represCard_right {
+    margin-left: 5%;
+    .represCard_right_name {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+
+      color: #ededed;
+      margin-bottom: 7%;
+    }
+    .represCard_right_role {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 21px;
+
+      color: rgba(237, 237, 237, 0.5);
+    }
+  }
+  .represCard_add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .represCard_circle {
+      width: 125px;
+      height: 125px;
+      background: transparent;
+      border: 2px solid #6558ff;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+    }
+    .represCard_title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #6558ff;
+    }
+  }
+}
