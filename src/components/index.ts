@@ -11,3 +11,4 @@ export { OutEditInfo } from './OutEditInfo';
 export { RepresentativeCard } from './RepresentativeCard';
 export { MyTeams } from './MyTeams';
 export { PersonalData } from './PersonalData';
+export { MyEvents } from './MyEvents';

@@ -3,7 +3,7 @@ import 'app.module.scss';
 import { Route, Routes, Navigate } from 'react-router';
 import { BrowserRouter as Router, Outlet } from 'react-router-dom';
 import { PersonalPage, OverviewPage, RegBlock, AuthBlock, LoginPage } from './pages';
-import { AddTeam, Header, MyTeams, PersonalData } from './components';
+import { AddTeam, Header, MyTeams, PersonalData, MyEvents } from './components';
 import { Footer } from './components/Footer';
 
 export const App = () => (
@@ -31,7 +31,7 @@ export const App = () => (
         }
       >
         <Route path="info" element={<PersonalData />} />
-        <Route path="events" element={<div>Events</div>} />
+        <Route path="events" element={<MyEvents />} />
         <Route path="team" element={<AddTeam />} />
         <Route path="rating" element={<div>Rating</div>} />
         <Route path="registr" element={<div>Registr</div>} />
