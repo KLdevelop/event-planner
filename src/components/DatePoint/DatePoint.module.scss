@@ -24,8 +24,10 @@
       background: #d9d9d9;
     }
     .datePoint_circle_active {
-      width: 23px;
-      height: 23px;
+      filter: blur(5px);
+      box-shadow: 0 0 20px #402fff;
+      width: 25px;
+      height: 25px;
       border-radius: 50px;
       background: #402fff;
     }

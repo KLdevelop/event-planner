@@ -1,42 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, DatePoint } from 'src/components';
 import cardImage from 'src/assets/img/cardImage.png';
 import styles from './overviewPage.module.scss';
+import { cards, month } from 'src/helpers/fakeData';
+import { getMonthFromDate } from 'src/helpers/commandFunc';
 
 export const OverviewPage = () => {
+  const d = new Date();
+  const [activeMonth, setActiveMonth] = useState(month[d.getMonth()]);
+  const getActiveMonth = (month: string) => {
+    setActiveMonth(month);
+  };
   return (
     <div className={styles.overviewPage}>
       <div className={styles.overviewPage_title}> {'<Календарь мероприятий>'}</div>
-      <DatePoint />
+      <DatePoint getActiveMonth={getActiveMonth} />
       <div className={styles.overviewPage_card}>
-        <Card
-          image={cardImage}
-          description="Хакатон в рамках Всероссийских соревнований по спортивному программированию"
-          date="27.04.2023 "
-          team="от 3 до 5 участников"
-          tags={['AI/ML', 'Backend', 'Frontend', 'С++', 'Data Science']}
-        />
-        <Card
-          image={cardImage}
-          description="Хакатон в рамках Всероссийских соревнований по спортивному программированию"
-          date="27.04.2023 "
-          team="от 3 до 5 участников"
-          tags={['AI/ML', 'Backend', 'Frontend', 'С++', 'Data Science']}
-        />
-        <Card
-          image={cardImage}
-          description="Хакатон в рамках Всероссийских соревнований по спортивному программированию"
-          date="27.04.2023 "
-          team="от 3 до 5 участников"
-          tags={['AI/ML', 'Backend', 'Frontend', 'С++', 'Data Science']}
-        />
-        <Card
-          image={cardImage}
-          description="Хакатон в рамках Всероссийских соревнований по спортивному программированию"
-          date="27.04.2023 "
-          team="от 3 до 5 участников"
-          tags={['AI/ML', 'Backend', 'Frontend', 'С++', 'Data Science']}
-        />
+        {cards.map((i, ind) =>
+          activeMonth === month[getMonthFromDate(i.date)] ? (
+            <Card
+              key={ind}
+              image={cardImage}
+              description={i.description}
+              date={i.date}
+              team={i.team}
+              tags={i.tags}
+            />
+          ) : null,
+        )}
       </div>
     </div>
   );
