@@ -10,7 +10,7 @@ interface CardProps {
 export const Card = (props: CardProps) => {
   return (
     <div className={styles.card}>
-      <img src={props.image} />
+      <img className={styles.cardImage} src={props.image} />
       <div className={styles.cardDesc}>{props.description}</div>
       <div className={styles.cardDate}>
         <span>Дата:</span>
