@@ -10,3 +10,4 @@ export { TeamCard } from './TeamCard';
 export { OutEditInfo } from './OutEditInfo';
 export { RepresentativeCard } from './RepresentativeCard';
 export { MyTeams } from './MyTeams';
+export { PersonalData } from './PersonalData';
