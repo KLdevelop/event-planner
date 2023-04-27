@@ -1,20 +1,21 @@
 .datePoint {
-  height: 114px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  // flex-direction: column;
   background: #1b1c21;
-  background-image: url('../../assets/img/line_month.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
+  // background-image: url('../../assets/img/line_month.svg');
+  // background-size: contain;
+  // background-repeat: no-repeat;
   background-position: center;
   .datePoint_elem {
-    margin-right: 50px;
+    // margin-right: 50px;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    margin: 0;
 
     .datePoint_circle {
       width: 23px;
@@ -30,6 +31,8 @@
     }
   }
   .datePoint_month {
+    margin: 0;
+    margin-top: 10px;
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 400;
