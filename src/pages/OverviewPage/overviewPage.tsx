@@ -6,6 +6,7 @@ import styles from './overviewPage.module.scss';
 export const OverviewPage = () => {
   return (
     <div className={styles.overviewPage}>
+      <div className={styles.overviewPage_title}> {'<Календарь мероприятий>'}</div>
       <DatePoint />
       <div className={styles.overviewPage_card}>
         <Card

@@ -1,5 +1,19 @@
 .overviewPage {
   background: #1b1c21;
+  background-image: url('../../assets/img/linesOverview.svg');
+  background-position: start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .overviewPage_title {
+    padding: 50px 30px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 25px;
+    letter-spacing: -1.68px;
+    color: #ededed;
+  }
   .overviewPage_card {
     display: flex;
     justify-content: space-around;
