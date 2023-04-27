@@ -1,3 +1,25 @@
+@use '/src/styles/colors.module.scss';
+
 .personalPage {
-  
+  background: colors.$fGrayBright;
+  color: white;
+
+  .mainBlock {
+    display: flex;
+    height: 100%;
+    max-height: 100%;
+
+    .tabBlock {
+      padding: 10px 20px;
+      border-right: 1px solid black;
+    }
+
+    .contentBlock {
+      padding: 20px;
+    }
+  }
+}
+
+body {
+  background: colors.$fGrayBright;
 }

@@ -8,8 +8,18 @@ export const App = () => (
   <Router>
     <Routes>
       <Route path="/" element={<div className={styles.app}>App</div>} />
-      <Route path="/lk" element={<PersonalPage />} />
       <Route path="/overview" element={<OverviewPage />} />
+      <Route path="/lk" element={<PersonalPage />}>
+        <Route path="info" element={<div>Info</div>} />
+        <Route path="events" element={<div>Events</div>} />
+        <Route path="team" element={<div>Team</div>} />
+        <Route path="rating" element={<div>Rating</div>} />
+        <Route path="registr" element={<div>Registr</div>} />
+        <Route path="delete" element={<div>Delete</div>} />
+        <Route path="analysis" element={<div>Analysis</div>} />
+        <Route path="sendapp" element={<div>Send app</div>} />
+        <Route path="rating" element={<div>Rating</div>} />
+      </Route>
     </Routes>
   </Router>
 );

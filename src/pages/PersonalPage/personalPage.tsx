@@ -12,10 +12,10 @@ export const PersonalPage = () => {
         <div className={styles.tabBlock}>
           <SideBarLk
             list={[
-              { name: 'Личная информация ', link: '/test' },
-              { name: 'Мои мероприятия ', link: '/test' },
-              { name: 'Моя команда', link: '/test' },
-              { name: 'Мой рейтинг', link: '/test' },
+              { name: 'Личная информация ', link: 'info' },
+              { name: 'Мои мероприятия ', link: 'events' },
+              { name: 'Моя команда', link: 'team' },
+              { name: 'Мой рейтинг', link: 'rating' },
             ]}
           />
         </div>
