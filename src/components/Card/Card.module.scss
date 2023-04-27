@@ -1,0 +1,63 @@
+.card {
+  width: min-content;
+  background: #2d2e37;
+  padding: 20px;
+  border-radius: 10px;
+  &:hover {
+    -webkit-box-shadow: 0 0 20px blue;
+    -moz-box-shadow: 0 0 20px blue;
+    box-shadow: 0 0 20px blue;
+  }
+  div {
+    margin-bottom: 5%;
+  }
+
+  .cardDesc {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ededed;
+  }
+  .cardTag {
+    display: flex;
+    .cardTagElem {
+      padding: 1%;
+      border: 1px solid #6558ff;
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      color: #6558ff;
+      margin-right: 1%;
+    }
+  }
+  .cardDate {
+    span {
+      color: rgba(237, 237, 237, 0.5);
+    }
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ededed;
+  }
+  .cardTeam {
+    span {
+      color: rgba(237, 237, 237, 0.5);
+    }
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #ededed;
+  }
+}
