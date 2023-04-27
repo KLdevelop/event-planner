@@ -18,15 +18,16 @@
     }
   }
   .header_right {
-    width: 30%;
+    width: fit-content;
     display: flex;
     justify-content: space-between;
     .header_right_img {
-      padding: 3%;
+      padding: 10px 20px;
       display: flex;
       align-items: center;
       background: #3a3c46;
       border-radius: 0px 0px 10px 10px;
+      margin-right: 10px;
     }
     // .header_right_img:
     .header_right_items {
