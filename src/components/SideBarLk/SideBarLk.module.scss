@@ -1,0 +1,19 @@
+.sideBar {
+  width: 30%;
+  background: #2d2e37;
+  padding: 30px;
+  .sideBar_elem {
+    display: flex;
+    justify-content: end;
+    a {
+      text-align: right;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 31px;
+      text-decoration: none;
+      color: #ffffff;
+      padding-bottom: 49px;
+    }
+  }
+}
