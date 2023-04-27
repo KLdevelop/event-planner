@@ -1,21 +1,26 @@
 .datePoint {
+  // width: 100%;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #2d2e37;
-  // background-image: url('../../assets/img/line_month.svg');
-  // background-size: contain;
-  // background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
+  overflow-x: scroll;
+  box-sizing: content-box;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   .datePoint_elem {
-    // margin-right: 50px;
-    width: 100%;
+    // width: 100%;
+    width: 50px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    margin: 0 45px;
 
     .datePoint_circle {
       width: 23px;
