@@ -13,7 +13,7 @@ export const PersonalPage = () => {
             list={[
               { name: 'Личная информация ', link: 'info' },
               { name: 'Мои мероприятия ', link: 'events' },
-              { name: 'Моя команда', link: 'team' },
+              { name: 'Мои команды', link: 'addteam' },
               { name: 'Мой рейтинг', link: 'rating' },
             ]}
           />

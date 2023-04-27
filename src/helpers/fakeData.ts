@@ -65,3 +65,60 @@ export const cards = [
     tags: ['AI/ML', 'Backend', 'Frontend', 'С++', 'Data Science'],
   },
 ];
+export const teamUsers = [
+  {
+    image: '',
+    name: 'Иван Петров',
+    roles: 'Adobe Illustrator, Figma, Web Design',
+  },
+  {
+    image: '',
+    name: 'Марина Васечкина',
+    roles: 'Back-end, Kotlin, Spring',
+  },
+  {
+    image: '',
+    name: 'Василий Воронов',
+    roles: 'Frontend-разработчик',
+  },
+  {
+    image: '',
+    name: undefined,
+    roles: undefined,
+  },
+  {
+    image: '',
+    name: undefined,
+    roles: undefined,
+  },
+];
+
+export const representativeCards = [
+  {
+    name: 'Филиппов Александр Федорович',
+    role: 'Представитель участников',
+    avatar: '',
+  },
+  {
+    name: undefined,
+  },
+];
+
+export const myTeamsData = [
+  {
+    name: '*Название команды*',
+    count: '3/5',
+  },
+  {
+    name: '*Название команды*',
+    count: '3/5',
+  },
+  {
+    name: '*Название команды*',
+    count: '3/5',
+  },
+  {
+    name: '*Название команды*',
+    count: '3/5',
+  },
+];
