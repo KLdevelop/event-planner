@@ -1,7 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
+import { eventReducer, usersReducer } from './reducers';
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    events: eventReducer,
+    users: usersReducer,
+  },
 });
 
 export default store;

@@ -20,7 +20,16 @@ export const App = () => (
         }
       >
         <Route path="overview" element={<OverviewPage />} />
-        <Route path="lk" element={<PersonalPage />}>
+      </Route>
+      <Route
+        path="/lk"
+        element={
+          <>
+            <Header />
+            <PersonalPage />
+          </>
+        }
+      >
           <Route path="info" element={<div>Info</div>} />
           <Route path="events" element={<div>Events</div>} />
           <Route path="team" element={<AddTeam />} />
@@ -31,7 +40,7 @@ export const App = () => (
           <Route path="sendapp" element={<div>Send app</div>} />
           <Route path="rating" element={<div>Rating</div>} />
           <Route path="addteam" element={<MyTeams />} />
-        </Route>
+
       </Route>
       <Route path="/login" element={<LoginPage />}>
         <Route index element={<AuthBlock />} />
