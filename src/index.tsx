@@ -7,6 +7,7 @@ import store from './models/store';
 const AppElement = document.getElementById('app') || document.createElement('app');
 AppElement.style.display = 'flex';
 AppElement.style.flexDirection = 'column';
+AppElement.style.height = '100%';
 AppElement.style.minHeight = '100%';
 const root = createRoot(AppElement);
 
