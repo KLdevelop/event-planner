@@ -18,9 +18,14 @@ export const Dropdown = (props: Props) => {
 
   return (
     <div className={styles.dropdown}>
-      <div className={styles.field}>
+      <div className={styles.field} onClick={() => setShow(!show)}>
         <input type="text" placeholder={props.placeholder} value={activeOption} />
-        <img src={dropdown} alt="" onClick={() => setShow(!show)} />
+        <img
+          className={show ? styles.arrowUp : styles.arrowDown}
+          src={dropdown}
+          alt=""
+          // onClick={() => setShow(!show)}
+        />
       </div>
       {show && (
         <div className={styles.drop}>
