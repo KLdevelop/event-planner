@@ -20,17 +20,26 @@ export const App = () => (
         }
       >
         <Route path="overview" element={<OverviewPage />} />
-        <Route path="lk" element={<PersonalPage />}>
-          <Route path="info" element={<div>Info</div>} />
-          <Route path="events" element={<div>Events</div>} />
-          <Route path="team" element={<div>Team</div>} />
-          <Route path="rating" element={<div>Rating</div>} />
-          <Route path="registr" element={<div>Registr</div>} />
-          <Route path="delete" element={<div>Delete</div>} />
-          <Route path="analysis" element={<div>Analysis</div>} />
-          <Route path="sendapp" element={<div>Send app</div>} />
-          <Route path="rating" element={<div>Rating</div>} />
-        </Route>
+      </Route>
+      <Route
+        path="/lk"
+        element={
+          <>
+            <Header />
+            <PersonalPage />
+          </>
+        }
+      >
+        <Route index element={<div>Info</div>} />
+        <Route path="info" element={<Navigate to="/lk" />} />
+        <Route path="events" element={<div>Events</div>} />
+        <Route path="team" element={<div>Team</div>} />
+        <Route path="rating" element={<div>Rating</div>} />
+        <Route path="registr" element={<div>Registr</div>} />
+        <Route path="delete" element={<div>Delete</div>} />
+        <Route path="analysis" element={<div>Analysis</div>} />
+        <Route path="sendapp" element={<div>Send app</div>} />
+        <Route path="rating" element={<div>Rating</div>} />
       </Route>
       <Route path="/login" element={<LoginPage />}>
         <Route index element={<AuthBlock />} />
