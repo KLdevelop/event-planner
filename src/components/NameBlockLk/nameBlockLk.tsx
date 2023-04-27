@@ -4,10 +4,10 @@ import styles from './nameBlockLk.module.scss';
 export const NameBlockLk = () => {
   return (
     <div className={styles.nameBlockLk}>
-      <img src="" alt="" />
+      <img src="" alt="" className={styles.avatar} />
       <div className={styles.nameBlock}>
-        <p>Имя Фамилия</p>
-        <p>Роль</p>
+        <p className={styles.FIO}>Имя Фамилия</p>
+        <p className={styles.role}>Роль</p>
       </div>
     </div>
   );
