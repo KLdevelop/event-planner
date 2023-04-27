@@ -1,0 +1,66 @@
+.dropdown {
+  width: 278px;
+  // height: 63px;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 2px solid #9b9c9e;
+
+  .field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // height: 100%;
+
+    input {
+      outline: none;
+      border: none;
+    }
+
+    input::placeholder {
+      color: #9b9c9e;
+      font-variant: all-small-caps;
+    }
+  }
+
+  .drop {
+    // margin-top: 63px;
+    margin-top: 100%;
+    position: absolute;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 25px;
+
+    .item {
+      display: flex;
+      // justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      // height: 100%;
+      $circleHeight: 13px;
+
+      .circle,
+      .activeCircle {
+        border-radius: 50px;
+        width: $circleHeight;
+        height: $circleHeight;
+        margin-right: 15px;
+      }
+
+      .circle {
+        background: #d9d9d9;
+      }
+
+      .activeCircle {
+        background: #402fff;
+      }
+    }
+  }
+}
