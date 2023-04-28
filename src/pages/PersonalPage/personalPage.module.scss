@@ -1,20 +1,14 @@
 @use '/src/styles/colors.module.scss';
 
 .personalPage {
-  height: 100vh;
-
+  height: max-content;
   width: 100%;
-  // height: max-content;
-  // min-height: max-content;
   background-color: colors.$fGrayBright;
-  // overflow: hidden;
   color: white;
   min-height: max-content;
 
   .mainBlock {
     display: flex;
-    height: max-content;
-    min-height: 100%;
     background-color: colors.$fGrayBright;
     background: url('/src/assets/background/lkBackground.svg');
     background-repeat: no-repeat;
