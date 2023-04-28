@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Input, Button } from 'src/components';
 
@@ -10,19 +10,26 @@ import { useNavigate } from 'react-router';
 export const AuthBlock = () => {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
+  const [email, setEmail] = useState('');
+  const navigate = useNavigate();
   return (
     <div className={styles.authBlock}>
-      <Input type="text" placeholder="ваша почта" />
+      <Input
+        value={email}
+        onChange={(e) => setEmail(String(e.target.value))}
+        type="text"
+        placeholder="ваша почта"
+      />
       <Input type="password" placeholder="пароль" />
       <Button
         onClick={() => {
           dispatch(
             authUser({
-              email: 'drapdrop1@gmail.com',
-              password: '123456',
+              email,
+              password: '',
             }),
           );
-          navigate('/');
+          navigate('/lk');
         }}
       >
         Войти

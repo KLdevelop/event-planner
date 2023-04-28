@@ -29,6 +29,7 @@ export interface AuthUser {
 }
 
 export interface RegistrationUser extends AuthUser {
+  id?: number;
   username: string;
   surname: string;
   lastname: string;

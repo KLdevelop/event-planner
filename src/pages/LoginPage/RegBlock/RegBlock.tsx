@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import React, { useState } from 'react';
 
 import { Input, Button } from 'src/components';
@@ -9,12 +10,8 @@ import { registrUser } from 'src/models/thunks';
 
 export const RegBlock = () => {
   const [user, setUser] = useState<RegistrationUser>();
-  const [state, setState] = useState('');
   const dispatch = useDispatch();
 
-  function getRes(val: string) {
-    setState(val);
-  }
   return (
     <div className={styles.registrationBlock}>
       <Input
@@ -45,14 +42,13 @@ export const RegBlock = () => {
           'Партнер федерации',
           'Администратор ФСП',
         ]}
-        activeOption={user?.role || ''}
         setActiveOption={(role: string) => setUser({ ...user!, role })}
-        // setActiveOption={(e) => setUser({ ...user!, role: e.target.value })}
+        activeOption={user?.role || ''}
       />
       <Input type="password" placeholder="пароль" />
       <Button
         onClick={() => {
-          dispatch(registrUser(user));
+          dispatch(registrUser(user as never) as never);
         }}
       >
         Зарегистрироваться
