@@ -21,7 +21,7 @@ export const RegBlock = () => {
         ]}
       />
       <Input type="password" placeholder="пароль" />
-      <Button>Войти</Button>
+      <Button>Зарегистрироваться</Button>
     </div>
   );
 };

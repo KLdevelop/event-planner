@@ -3,9 +3,10 @@
 .personalPage {
   height: max-content;
   width: 100%;
+  height: max-content;
   background-color: colors.$fGrayBright;
   color: white;
-  min-height: max-content;
+  min-height: 100vh;
 
   .mainBlock {
     display: flex;
