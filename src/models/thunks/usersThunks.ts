@@ -7,6 +7,7 @@ export const registrUser = createAsyncThunk('users/registr', async (user: Regist
 });
 
 export const authUser = createAsyncThunk('users/auth', async (user: AuthUser) => {
+  console.log(user);
   const response = await axios.get<boolean>('/api/login');
 
   return response.data;

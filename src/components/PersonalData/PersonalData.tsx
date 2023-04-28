@@ -25,8 +25,9 @@ export const PersonalData = () => {
       <div className={styles.personalData_inps}>
         <OutEditInfo title="Серия " inpValue="5615" />
         <OutEditInfo title="Номер" inpValue="33333" />
-        <OutEditInfo title="Номер" inpValue="0000000000000000" />
       </div>
+      <p className={styles.personalData_title}>Полис ОМС</p>
+      <OutEditInfo title="Номер полиса" inpValue="0000000000000000" />
     </div>
   );
 };
