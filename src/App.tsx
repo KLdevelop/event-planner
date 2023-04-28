@@ -11,6 +11,7 @@ import {
   RatingPage,
   Description,
   MainPage,
+  SendappPage,
 } from './pages';
 import { AddTeam, Header, MyTeams, PersonalData, MyEvents, Footer } from './components';
 import { TeamBlock } from './pages/RatingPage';
@@ -41,10 +42,11 @@ export const App = () => (
           </>
         }
       >
-        <Route path="info" element={<PersonalData />} />
+        <Route index element={<PersonalData />} />
+        <Route path="info" element={<Navigate to="/lk" />} />
         <Route path="events" element={<MyEvents />} />
         <Route path="team" element={<AddTeam />} />
-        <Route path="sendapp" element={<div>Send app</div>} />
+        <Route path="sendapp" element={<SendappPage />} />
         <Route path="addteam" element={<MyTeams />} />
         <Route path="registr" element={<div>Registr</div>} />
         <Route path="delete" element={<div>Delete</div>} />
