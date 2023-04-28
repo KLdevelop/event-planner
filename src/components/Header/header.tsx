@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.header_left}>
         <img src={headerLogo} />
         <span>Программируя будущее</span>
@@ -24,10 +24,12 @@ export const Header = () => {
           <Link to="/overview">
             <span className={styles.header_right_span}>Мероприятия</span>
           </Link>
-          <span className={styles.header_right_span}>Рейтинг</span>
+          <Link to="/lk/rating">
+            <span className={styles.header_right_span}>Рейтинг</span>
+          </Link>
           <span className={styles.header_right_span}>Оценки</span>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
