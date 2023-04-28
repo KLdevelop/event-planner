@@ -13,7 +13,7 @@ export const Header = () => {
       </div>
       <div className={styles.header_right}>
         <div className={styles.header_right_img}>
-          <Link to="/lk">
+          <Link to="/login">
             <img src={userLK} />
           </Link>
         </div>

@@ -8,6 +8,7 @@ import { authUser } from 'src/models/thunks';
 import { useNavigate } from 'react-router';
 
 export const AuthBlock = () => {
+  const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const [email, setEmail] = useState('');
   const navigate = useNavigate();
