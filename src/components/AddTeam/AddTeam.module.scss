@@ -1,0 +1,43 @@
+.addTeam {
+  background-image: url('/src/assets/img/lk_lines.svg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  .addTeam_info {
+    display: flex;
+    align-items: start;
+    margin-bottom: 30px;
+    .addTeam_info_left {
+      display: flex;
+      flex-direction: column;
+    }
+    .addTeam_info_center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .addTeam_info_center_title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 10px;
+        color: #9b9c9e;
+      }
+      .addTeam_info_center_avatar {
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        background: #d9d9d9;
+        border-radius: 100px;
+      }
+    }
+  }
+  .addTeam_teamCards {
+    display: flex;
+    margin: 2%;
+  }
+}
