@@ -1,0 +1,32 @@
+@use '/src/styles/colors.module.scss';
+
+.teamBlock {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: colors.$fGrayBright;
+
+  .header,
+  .content .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    div {
+      width: 12%;
+      padding: 10px;
+    }
+  }
+  .content {
+    .row {
+      display: flex;
+      width: 100%;
+      div {
+        padding: 10px;
+        border-right: 1px solid rgba(155, 156, 158, 0.59);
+      }
+      .summary {
+        border-right: unset;
+      }
+    }
+  }
+}
