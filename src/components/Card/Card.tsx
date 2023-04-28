@@ -54,6 +54,7 @@ export const Card = (props: CardProps) => {
           {props.result}
         </div>
       )}
+      {props.result && <button className={styles.card_like}>Оценить</button>}
     </div>
   );
 };
