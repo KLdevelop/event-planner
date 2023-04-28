@@ -1,9 +1,11 @@
 .myTeams {
+  width: 100%;
   .myTeams_cards {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    // justify-content: space-around;
+    // justify-content: space-between;
+    width: 100%;
     .card {
       margin: 10px;
       width: 323px;
