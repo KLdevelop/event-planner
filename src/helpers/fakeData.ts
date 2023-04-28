@@ -122,3 +122,28 @@ export const myTeamsData = [
     count: '3/5',
   },
 ];
+
+export const sportsmanItems = [
+  { name: 'Личная информация ', link: 'info' },
+  { name: 'Мои мероприятия ', link: 'events' },
+  { name: 'Мои команды', link: 'myteam' },
+  { name: 'Мой рейтинг', link: 'rating' },
+];
+
+export const partnerItems = [
+  { name: 'Личная информация ', link: 'info' },
+  { name: 'Отправить заявку', link: '' },
+  { name: 'Рейтинг', link: '' },
+];
+export const representativeItems = [
+  { name: 'Личная информация ', link: 'info' },
+  { name: 'Отправить заявку', link: '' },
+  { name: 'Мероприятия', link: '' },
+  { name: 'Рейтинг', link: '' },
+];
+export const adminItems = [
+  { name: 'Зарегестрировать', link: '' },
+  { name: 'Удалить', link: '' },
+  { name: 'Анализ мероприятий', link: '' },
+  { name: 'Личная информация', link: '' },
+];
