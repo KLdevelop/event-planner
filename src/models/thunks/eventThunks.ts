@@ -9,5 +9,5 @@ export const getAllEvents = createAsyncThunk('events/getAllEvents', async () => 
 });
 
 export const postNewEvent = createAsyncThunk('events/postNewEvent', async (event: Event) => {
-  await axios.post<Event>('/api/api/newevent', event);
+  await axios.post<Event>('/api/newevent', event);
 });

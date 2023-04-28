@@ -6,10 +6,10 @@ export interface TabListElement {
 }
 
 export interface Event {
-  eventId?: number;
+  eventid?: number | null;
   eventname: string;
-  content: string;
   eventcase: string;
+  content: string;
   author: string;
   location: string;
   date: Moment;
@@ -31,7 +31,7 @@ export interface AuthUser {
 export interface RegistrationUser extends AuthUser {
   username: string;
   surname: string;
-  lastname?: string;
+  lastname: string;
   role: string;
 }
 

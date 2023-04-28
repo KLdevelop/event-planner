@@ -3,7 +3,7 @@ import { AuthUser, RegistrationUser } from 'src/types/interfaces';
 import axios from 'axios';
 
 export const registrUser = createAsyncThunk('users/registr', async (user: RegistrationUser) => {
-  await axios.post<RegistrationUser>('/api/user', user);
+  await axios.post<RegistrationUser>('/api/users/', user);
 });
 
 export const authUser = createAsyncThunk('users/auth', async (user: AuthUser) => {
