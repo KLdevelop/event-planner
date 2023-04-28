@@ -16,10 +16,11 @@ export default merge(common, {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
       'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
+      'ngrok-skip-browser-warning': 'true',
     },
     proxy: {
       '/api': {
-        target: 'localhost:8080',
+        target: 'https://29ec-188-254-110-254.ngrok-free.app/',
         pathRewrite: { '^/api': '' },
         secure: false,
         changeOrigin: true,
