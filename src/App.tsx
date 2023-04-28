@@ -2,10 +2,8 @@ import React from 'react';
 import 'app.module.scss';
 import { Route, Routes, Navigate } from 'react-router';
 import { BrowserRouter as Router, Outlet } from 'react-router-dom';
-import { Header } from './components';
 import { PersonalPage, OverviewPage, RegBlock, AuthBlock, LoginPage, RatingPage } from './pages';
-import { AddTeam, Header, MyTeams, PersonalData, MyEvents } from './components';
-import { Footer } from './components/Footer';
+import { AddTeam, Header, MyTeams, PersonalData, MyEvents, Footer } from './components';
 import { TeamBlock } from './pages/RatingPage';
 
 export const App = () => (

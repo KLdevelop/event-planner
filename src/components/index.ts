@@ -1,5 +1,6 @@
 export { SideBarLk } from './SideBarLk';
 export { Header } from './Header';
+export { Footer } from './Footer';
 export { NameBlockLk } from './NameBlockLk';
 export { Card } from './Card';
 export { DatePoint } from './DatePoint';
