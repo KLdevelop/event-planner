@@ -6,7 +6,6 @@ import styles from './authBlock.module.scss';
 import { useAppDispatch } from 'src/hooks';
 import { authUser } from 'src/models/thunks';
 import { useNavigate } from 'react-router';
-import axios from 'axios';
 
 export const AuthBlock = () => {
   const navigate = useNavigate();
