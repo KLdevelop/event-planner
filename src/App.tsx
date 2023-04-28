@@ -10,6 +10,7 @@ import {
   LoginPage,
   RatingPage,
   Description,
+  MainPage,
 } from './pages';
 import { AddTeam, Header, MyTeams, PersonalData, MyEvents, Footer } from './components';
 import { TeamBlock } from './pages/RatingPage';
@@ -27,6 +28,7 @@ export const App = () => (
           </>
         }
       >
+        <Route index element={<MainPage />} />
         <Route path="overview" element={<OverviewPage />} />
         <Route path="description" element={<Description />} />
       </Route>

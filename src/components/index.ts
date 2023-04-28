@@ -14,3 +14,4 @@ export { MyTeams } from './MyTeams';
 export { PersonalData } from './PersonalData';
 export { MyEvents } from './MyEvents';
 export { KeyValueDiv } from './KeyValueDiv';
+export { Banner } from './Banner';
