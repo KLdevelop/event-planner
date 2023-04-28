@@ -32,12 +32,9 @@ export const App = () => (
       >
         <Route path="info" element={<PersonalData />} />
         <Route path="events" element={<MyEvents />} />
-        <Route path="team" element={<MyTeams />} />
-        <Route path="rating" element={<div>Rating</div>} />
-
+        <Route path="team" element={<AddTeam />} />
         <Route path="sendapp" element={<div>Send app</div>} />
-
-        <Route path="addteam" element={<AddTeam />} />
+        <Route path="addteam" element={<MyTeams />} />
         <Route path="registr" element={<div>Registr</div>} />
         <Route path="delete" element={<div>Delete</div>} />
         <Route path="analysis" element={<div>Analysis</div>} />
