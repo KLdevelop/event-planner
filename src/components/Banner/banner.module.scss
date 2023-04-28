@@ -1,0 +1,45 @@
+.banner {
+  background: black;
+  height: 600px;
+  margin: 0;
+
+  .mapLayer {
+    height: 100%;
+    background: url('/src/assets/img/map.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+
+    .womenLayer {
+      height: 100%;
+      background: url('/src/assets/img/women.png');
+      background-repeat: no-repeat;
+
+      .lineLayer {
+        height: 100%;
+        background: url('/src/assets/img/bannerLine.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80% 100vw;
+
+        display: flex;
+        // align-items: bottom;
+
+        .bottom {
+          margin-left: auto;
+          margin-top: auto;
+          margin-right: 200px;
+          margin-bottom: 60px;
+          // height: 700px;
+          p {
+            // height: 100%;
+            width: min-content;
+            text-align: right;
+            font-weight: 700;
+            font-size: 60px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

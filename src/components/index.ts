@@ -13,3 +13,4 @@ export { RepresentativeCard } from './RepresentativeCard';
 export { MyTeams } from './MyTeams';
 export { PersonalData } from './PersonalData';
 export { MyEvents } from './MyEvents';
+export { Banner } from './Banner';
