@@ -24,6 +24,7 @@
   }
   .cardTag {
     display: flex;
+    flex-wrap: wrap;
     .cardTagElem {
       padding: 1%;
       border: 1px solid #6558ff;
