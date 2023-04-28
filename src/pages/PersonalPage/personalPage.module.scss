@@ -2,12 +2,11 @@
 
 .personalPage {
   width: 100%;
-  min-height: max-content;
+  height: max-content;
   background-color: colors.$fGrayBright;
   // overflow: hidden;
   color: white;
-  min-height: max-content;
-
+  min-height: 100vh;
 
   .mainBlock {
     background: url('/src/assets/background/lkBackground.svg');
