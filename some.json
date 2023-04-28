@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "username": "asd",
+      "surname": "asd",
+      "lastname": "asd",
+      "email": "asdsad",
+      "role": "Представитель региональной организации",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

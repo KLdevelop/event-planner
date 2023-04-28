@@ -7,3 +7,7 @@ export const getAllEvents = createAsyncThunk('events/getAllEvents', async () => 
 
   return response.data;
 });
+
+export const postNewEvent = createAsyncThunk('events/postNewEvent', async (event: Event) => {
+  await axios.post<Event>('/api/newevent', event);
+});
