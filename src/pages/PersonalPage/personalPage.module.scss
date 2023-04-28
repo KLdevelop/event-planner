@@ -1,11 +1,13 @@
 @use '/src/styles/colors.module.scss';
 
 .personalPage {
-  background-color: colors.$fGrayBright;
-  overflow: hidden;
-  color: white;
-  min-height: 100vh;
   width: 100%;
+  min-height: max-content;
+  background-color: colors.$fGrayBright;
+  // overflow: hidden;
+  color: white;
+  min-height: max-content;
+
 
   .mainBlock {
     background: url('/src/assets/background/lkBackground.svg');
