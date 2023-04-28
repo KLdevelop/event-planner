@@ -1,0 +1,18 @@
+.sendappPage {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  .addLogo,
+  .mid,
+  .right {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+      text-align: justify;
+    }
+  }
+}

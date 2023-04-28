@@ -19,7 +19,7 @@ export default merge(common, {
     },
     proxy: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'https://98dd-188-254-110-254.ngrok-free.app/',
         pathRewrite: { '^/api': '' },
         secure: false,
         changeOrigin: true,
