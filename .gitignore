@@ -1,7 +1,9 @@
 /node_modules
 /dist
 /build
+/dist
 /.git
 /.vscode
 *.log
 makeModule
+dist.zip
