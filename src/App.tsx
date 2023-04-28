@@ -2,7 +2,15 @@ import React from 'react';
 import 'app.module.scss';
 import { Route, Routes, Navigate } from 'react-router';
 import { BrowserRouter as Router, Outlet } from 'react-router-dom';
-import { PersonalPage, OverviewPage, RegBlock, AuthBlock, LoginPage, RatingPage } from './pages';
+import {
+  PersonalPage,
+  OverviewPage,
+  RegBlock,
+  AuthBlock,
+  LoginPage,
+  RatingPage,
+  Description,
+} from './pages';
 import { AddTeam, Header, MyTeams, PersonalData, MyEvents, Footer } from './components';
 import { TeamBlock } from './pages/RatingPage';
 
@@ -20,6 +28,7 @@ export const App = () => (
         }
       >
         <Route path="overview" element={<OverviewPage />} />
+        <Route path="description" element={<Description />} />
       </Route>
       <Route
         path="/lk"

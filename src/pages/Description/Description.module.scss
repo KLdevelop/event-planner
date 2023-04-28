@@ -1,0 +1,86 @@
+.description {
+  width: 100%;
+  .description_top {
+    display: flex;
+    justify-content: space-between;
+    background: #1b1c21;
+    padding: 40px;
+    .description_top_left {
+      // width: min-content;
+      display: flex;
+      flex-direction: column;
+      // align-items: end;
+      .description_top_title {
+        display: flex;
+        justify-content: end;
+        width: fit-content;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 150%;
+        color: #ffffff;
+      }
+    }
+    img {
+      width: 869px;
+      height: 527px;
+    }
+  }
+  .description_bottom {
+    padding-left: 50px;
+    display: flex;
+    background: #ededed;
+    .description_bottom_left {
+      width: 35%;
+      .description_tags {
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        .cardTagElem {
+          padding: 1%;
+          border: 2px solid #6558ff;
+          border-top-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          font-family: 'JetBrains Mono';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+          color: #6558ff;
+          margin-right: 1%;
+          margin-top: 3%;
+        }
+      }
+    }
+    .description_bottom_right {
+      width: 65%;
+      margin-bottom: 100px;
+      .description_bottom_right_title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        /* identical to box height, or 36px */
+
+        display: flex;
+        align-items: center;
+
+        color: #8d8d92;
+      }
+      .description_bottom_right_programs {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 200%;
+        color: #1b1c21;
+      }
+      .description_bottom_right_desc {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        color: #1b1c21;
+      }
+    }
+  }
+}
