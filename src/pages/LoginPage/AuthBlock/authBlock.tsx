@@ -1,26 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Input, Button } from 'src/components';
 
 import styles from './authBlock.module.scss';
 import { useAppDispatch } from 'src/hooks';
 import { authUser } from 'src/models/thunks';
+import { useNavigate } from 'react-router';
 
 export const AuthBlock = () => {
   const dispatch = useAppDispatch();
+  const [email, setEmail] = useState('');
+  const navigate = useNavigate();
   return (
     <div className={styles.authBlock}>
-      <Input type="text" placeholder="ваша почта" />
+      <Input
+        value={email}
+        onChange={(e) => setEmail(String(e.target.value))}
+        type="text"
+        placeholder="ваша почта"
+      />
       <Input type="password" placeholder="пароль" />
       <Button
-        onClick={() =>
+        onClick={() => {
           dispatch(
             authUser({
-              email: 'drapdrop1@gmail.com',
-              password: '123456',
+              email,
+              password: '',
             }),
-          )
-        }
+          );
+          navigate('/lk');
+        }}
       >
         Войти
       </Button>

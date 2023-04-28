@@ -8,7 +8,17 @@ export const registrUser = createAsyncThunk('users/registr', async (user: Regist
 
 export const authUser = createAsyncThunk('users/auth', async (user: AuthUser) => {
   console.log(user);
-  const response = await axios.get<boolean>('/api/login');
+  const response = await axios.get<RegistrationUser[]>('/api/users');
+
+  response.data.forEach((userItem) => {
+    if (userItem.email === user.email) return userItem;
+  });
+
+  throw Error;
+});
+
+export const getUserData = createAsyncThunk('users/data', async (userId: number) => {
+  const response = await axios.get<RegistrationUser>(`/api/users/${userId}`);
 
   return response.data;
 });

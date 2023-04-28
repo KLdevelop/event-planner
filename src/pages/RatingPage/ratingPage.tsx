@@ -10,6 +10,7 @@ export const RatingPage = () => {
         <Dropdown
           placeholder="Выберите рейтинг"
           items={['Рейтинг по командам', 'Личный рейтинг', 'Рейтинг мероприятий']}
+          setActiveOption={() => null}
         />
         <Outlet />
       </div>
