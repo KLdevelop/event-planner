@@ -6,9 +6,10 @@ export interface TabListElement {
 }
 
 export interface Event {
-  eventId: number;
+  eventId?: number;
   eventname: string;
   content: string;
+  eventcase: string;
   author: string;
   location: string;
   date: Moment;
